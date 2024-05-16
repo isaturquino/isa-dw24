@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+
+    <style>
+        ul.discplinas{
+            list-style-type: lower-greek;
+        }
+        .menu{
+            list-style-type: none
+        }
+        *{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            border: 1px;
+            box-sizing: border-box;
+        }
+
+        .menu li{
+            background-color: rgba(194, 214, 241, 0.719);
+            border: 2px solid black;
+            /*border-witdh:1px;*/
+            /*padding-right: 10px;
+            padding-top: 10px;*/
+            box-sizing: border-box;
+            padding: 10px;
+            width: 200px;
+            transition-duration: 0.5s;
+            margin: 10px 0 ;
+            border-radius: 8px;
+        }
+        .menu li:hover{
+            background-color: rgb(136, 255, 0);
+            cursor: pointer;
+        }
+        a.link{
+            text-decoration: none;
+            color: red;
+            border: 1px solid black;
+            border-radius: 4px;
+            padding: 3px;
+            font-weight: bolder;
+            transition-duration: 0.5s;
+        }
+        .link:hover{
+            background-color: rgb(194, 214, 241,0.719);
+        }
+    </style>
+</head>
+<body>
+    <h1>Listas Ordenadas</h1>
+
+    <ol>
+        <li>Item1</li>
+        <li>Item2</li>
+        <li>Item3</li>
+    </ol>
+
+    <h1> Listas Não Ordenadas</h1>
+    <ul class="discplinas">
+        <li>
+            <div>Desenvolvimento de Web 1 </div><ul class="disciplinas">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript básico </ul></li>
+        <li>Instalação e Manutenção de Computadores</li>
+        <li>Banco de Dados</li>
+    </ul>
+
+    <h1>Listas personalizadas</h1>
+    <ul class="menu">
+        <li><i class="material-icons">favorite</i>
+        Item 1</li>
+        <li><i class="material-icons">search</i>
+            Item 2</li>
+        <li><i class="material-icons">check</i>
+            Item 3 </li>
+    </ul>
+    <p>Confira melhor os icons clicando <a class="link" href="https://www.w3schools.com/w3css/w3css_icons.asp">aqui</a></a> ou em <a class="link" href="https://fonts.google.com/icons?icon.size=24&icon.color=%235f6368">icons-google</a>.</p>
+</body>
+</html>
