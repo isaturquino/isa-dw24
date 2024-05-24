@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            padding: 0; 
+            margin: 0; 
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: #FFEAD0;
+            width: 100vw;
+            height: 100vh;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .menu{
+            height: 80px;
+            background-color: #783F8E;
+        }
+        .menu ul{
+            display: flex;
+        }
+        .menu li{
+            list-style: none;
+        }
+        .menu a {
+            padding: 25px 15px;
+            display: inline-block;
+            height: 80px;
+            color: white;
+            text-decoration:none;
+            transition: 0.3s;
+        }
+
+        .menu a:hover{
+            background-color: #985F99;
+        }
+        div#home{
+            background-color: #fdede2;
+            width: 100%;
+            height: 100vh;
+        }
+        div#secao1{
+            background-color: #fff8e6;
+            width: 100%;
+            height: 100vh;
+        }
+        div#secao2{
+            background-color: #f0efeb;
+            width: 100%;
+            height:100vh
+        }
+        div#secao3{
+            background-color: #dfe7fd;
+            width: 100%;
+            height: 100vh;
+        }
+        div#contatos{
+            background-color: #cddafd;
+            width: 100%;
+            height: 100vh;
+        }
+        
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#secao1">Seção 1</a></li>
+                <li><a href="#secao2">Seção 2</a></li>
+                <li><a href="#secao3">Seção 3</a></li>
+                <li><a href="#contatos">Contatos</a></li>
+            </ul>
+        </div>
+        <div id="home">
+            <li>Home</li>
+        </div>
+        <div id="secao1">
+            <li>Seção 1</li>
+        </div>
+        <div id="secao2">
+            <li>Seção 2</li>
+        </div>
+        <div id="secao3">
+            <li>Seçao 3</li>
+        </div>
+        <div id="contatos">
+            <li>Contatos</li>
+        </div>
+
+
+
+    </div>
+    
+</body>
+</html>
