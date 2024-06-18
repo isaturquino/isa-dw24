@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acampamento</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+        :root {
+            --altura-menu: 3.75rem;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100%;
+        }
+
+        .menu {
+            height: var(--altura-menu);
+            background-color: #022b3a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .menu ul {
+            display: flex;
+        }
+
+        .menu li {
+            list-style: none;
+        }
+
+        .menu a {
+            padding: 20px 15px;
+            display: inline-block;
+            height: 3.75rem;
+            color: white;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        .menu a:hover {
+            background-color: #04395e;
+        }
+
+        div#home {
+            background-size: cover;
+            width: 100vw;
+            height: calc(120vh - var(--altura-menu));
+            background-position: center;
+            background-image: url("https://static.wixstatic.com/media/c549fe_4852ce165f2c4500a25168a4d3ccb06f~mv2.jpg/v1/fill/w_1920,h_1080,al_c/c549fe_4852ce165f2c4500a25168a4d3ccb06f~mv2.jpg");
+        }
+
+        div#tema, div#secao2, div#secao3 {
+            width: 100%;
+            height: 100vh;
+        }
+
+        div#tema {
+            background-color: #f0efeb;
+        }
+
+        div#secao2 {
+            background-color: #e9ecef;
+        }
+
+        div#secao3 {
+            background-color: #dee2e6;
+        }
+
+        .home {
+            background-size: cover;
+            width: 100vw;
+            height: 100vh;
+            background-position: center;
+            background-image: url("https://static.wixstatic.com/media/c549fe_4852ce165f2c4500a25168a4d3ccb06f~mv2.jpg/v1/fill/w_1920,h_1080,al_c/c549fe_4852ce165f2c4500a25168a4d3ccb06f~mv2.jpg");
+        }
+
+        .titulos {
+            color: rgb(255, 255, 255);
+            font-family: "Merriweather", serif;
+            font-weight: 700;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .titulo2 {
+            color: #04395e;
+            font-family: "Merriweather", serif;
+            font-weight: 700;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .textos {
+            color: rgb(255, 255, 255);
+            font-size: 1.1rem;
+            font-family: 'Times New Roman', Times, serif;
+            margin: .5rem;
+            background-color: #00000052;
+        }
+
+        .subtitulos {
+            color: white;
+            font-family: "Merriweather", serif;
+            font-weight: 600;
+            font-size: 1.3rem;
+            display: inline-block;
+            margin: .5rem;
+        }
+
+        .subtitulos2 {
+            color: #04395e;
+            font-family: "Merriweather", serif;
+            font-weight: 600;
+            font-size: 1.3rem;
+            text-align: center;
+            margin: .5rem;
+        }
+
+        .subtitulos3 {
+            color: #04395e;
+            font-family: "Merriweather", serif;
+            font-weight: 600;
+            font-size: 1.25rem;
+            text-align: left;
+            margin: .5rem;
+        }
+
+        .textos2 {
+            color: black;
+            font-size: 1.1rem;
+            font-family: 'Times New Roman', Times, serif;
+            margin: .5rem;
+        }
+
+        .imagem2 {
+            background-size: cover;
+            width: 23rem;
+            height: 23rem;
+            background-repeat: no-repeat;
+            justify-content: left;
+            margin: 8px;
+        }
+
+        .home2 {
+            background-size: cover;
+            width: 100vw;
+            height: calc(100vh - var(--altura-menu));
+            background-position: center;
+            background-image: url("https://static.wixstatic.com/media/c549fe_4852ce165f2c4500a25168a4d3ccb06f~mv2.jpg/v1/fill/w_1920,h_1080,al_c/c549fe_4852ce165f2c4500a25168a4d3ccb06f~mv2.jpg");
+        }
+    
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: auto;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .social-icons img {
+            width: 24px;
+            height: 24px;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tema">Tema</a></li>
+                <li><a href="#secao2">Seção 2</a></li>
+                <li><a href="#secao3">Seção 3</a></li>
+            </ul>
+        </div>
+        <div id="home" class="home">
+            <h1 class="titulos">Bem-vindo ao Acampamento</h1>
+            <p class="textos">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        </div>
+        <div id="tema">
+            <h2 class="titulo2">Tema do Acampamento</h2>
+            <p class="textos2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        </div>
+        <div id="secao2">
+            <h2 class="subtitulos2">Seção 2</h2>
+            <p class="textos2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        </div>
+        <div id="secao3">
+            <h2 class="subtitulos2">Seção 3</h2>
+            <p class="textos2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        </div>
+        <footer>
+            <p>&copy; 2024 Sua Empresa. Todos os direitos reservados.</p>
+            <p>
+                <a href="#sobre">Sobre Nós</a>
+                <a href="#contato">Contato</a>
+                <a href="#privacidade">Política de Privacidade</a>
+            </p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="https://www.example.com/facebook-icon.png" alt="Facebook">
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="https://www.example.com/twitter-icon.png" alt="Twitter">
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="https://www.example.com/instagram-icon.png" alt="Instagram">
+                </a>
+            </div>
+        </footer>
+        
+    </div>
+</body>
+</html>
