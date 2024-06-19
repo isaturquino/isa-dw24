@@ -2,6 +2,10 @@
 
 :root {
     --altura-menu: 60px;
+    --azul-tituloSubtitulo: #04395e;
+    --menu-footer:#022b3a;
+    --fonte-principal:"Merriweather",serif;
+    --fonte-textos:"Times New Roman", Times, serif;
 }
 
 * {
@@ -18,7 +22,7 @@
 
 .menu {
     height: var(--altura-menu);
-    background-color: #022b3a;
+    background-color: var(--menu-footer);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,7 +46,7 @@
 }
 
 .menu a:hover {
-    background-color: #04395e;
+    background-color: var(--azul-tituloSubtitulo);
 }
 
 div#home {
@@ -70,11 +74,6 @@ div#secao3 {
     height: 100vh;
     display: flex;
 }
-div#contatos{
-    width: 50%;
-    height: 50%;
-    flex-direction: column;
-}
 
 .home {
     background-size: cover;
@@ -85,7 +84,7 @@ div#contatos{
 
 .titulos {
     color: rgb(255, 255, 255);
-    font-family: "Merriweather", serif;
+    font-family:var(--fonte-principal) ;
     font-weight: 700;
     font-style: normal;
     text-align: center;
@@ -93,8 +92,8 @@ div#contatos{
 }
 
 .titulo2 {
-    color: #04395e;
-    font-family: "Merriweather", serif;
+    color:var(--azul-tituloSubtitulo);
+    font-family: var(--fonte-principal);
     font-weight: 700;
     font-style: normal;
     text-align: center;
@@ -104,7 +103,7 @@ div#contatos{
 .textos {
     color: rgb(255, 255, 255);
     font-size: 1.1rem;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: var(--fonte-textos);
     margin: .5rem;
     background-color: #00000052;
 
@@ -112,19 +111,18 @@ div#contatos{
 
 .subtitulos {
     color: white;
-    font-family: "Merriweather", serif;
+    font-family: var(--fonte-principal);
     font-weight: 600;
     font-style: normal;
     font-size: 1.3rem;
-    
     display: inline-block;
     margin: .5rem;
 
 }
 
 .subtitulos2 {
-    color: #04395e;
-    font-family: "Merriweather", serif;
+    color:var(--azul-tituloSubtitulo);
+    font-family: var(--fonte-principal);
     font-weight: 600;
     font-style: normal;
     font-size: 1.3rem;
@@ -133,8 +131,8 @@ div#contatos{
 }
 
 .subtitulos3 {
-    color: #04395e;
-    font-family: "Merriweather", serif;
+    color: var(--azul-tituloSubtitulo);
+    font-family: var(--fonte-principal);
     font-weight: 600;
     font-style: normal;
     font-size: 1.25rem;
@@ -145,7 +143,7 @@ div#contatos{
 .textos2 {
     color: blaCK;
     font-size: 1.1rem;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: var(--fonte-textos);
     margin: .5rem;
 }
 
@@ -161,7 +159,7 @@ div#contatos{
 }
 
 footer{
-    background-color: #022b3a;
+    background-color: var(--menu-footer);
     width: 100%;
     height: 11.25rem;
     display: flex;
@@ -194,14 +192,14 @@ div#contatos{
 .textoRodape{
     color: white;
     font-size: 1.1rem;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: var(--fonte-textos);
     margin: .5rem;
 }
 
 #botao-topo{
     text-decoration: none;
     color: white;
-    background-color: #04395e;
+    background-color: var(--azul-tituloSubtitulo);
     position: fixed;
     width: 3.125rem;
     height: 3.125rem;
