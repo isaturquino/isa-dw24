@@ -1,0 +1,79 @@
+:root{
+    --fonte: Arial, Helvetica, sans-serif;
+    --texto-p:10px;
+    --texto-menu:16px;
+    --texto-h1:30px;
+    --imagem-fundo:40vh;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.navbar{
+    display: flex;
+    flex-shrink: 0;
+    background-color: rgb(8, 8, 8);
+    width: 100%;
+    height: 10vh;
+    color: white;
+}
+.menu{
+    display: flex;
+    font-family: var(--fonte);
+    font-size: var(--texto-menu);
+    list-style-type: none;
+    border-right: 10px;
+    padding: 10px 15px;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+.secao_imagem{
+    flex-shrink: 0;
+    width: 100%;
+    height: var(--imagem-fundo);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(https://file.notion.so/f/f/48a2f079-68a5-4bb5-99eb-51881ae2de09/f0a165ff-3bc0-444f-8084-6b0e76a31f64/imagem-fundo.avif?id=a8a7aeee-541e-4797-9ddf-1a03f6346383&table=block&spaceId=48a2f079-68a5-4bb5-99eb-51881ae2de09&expirationTimestamp=1719684000000&signature=6fbsx4yI_MNpTHCcV-se1TaE0A784mDDlYn7sPwgRYo);
+}
+.secao_projetos{
+    display: flex;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100vw;
+    height: 50vh;
+    justify-content: center;
+   
+}
+.projeto_item{
+    justify-content: space-around;
+    width: 480px;
+    height: 200px;
+    border: solid black 1px;
+    border-radius: 8px;
+    padding: 20px 10px;
+    margin: 20px;
+}
+h1{
+    font-size:var(--texto-h1);
+    font-family: var(--fonte);
+    text-align: center;
+}
+p{font-family: var(--fonte);
+    font-size: var(--texto-p);
+
+}
+.logo{
+    display: flex;
+    font-family: var(--fonte);
+    align-self: center;
+    margin: 20px;
+    
+}
