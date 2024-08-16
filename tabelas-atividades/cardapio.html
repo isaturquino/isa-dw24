@@ -10,36 +10,48 @@
         @import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
            table{
             border-collapse: collapse;
-        }
-        #celula{
-            border: none;
-        }
-        td{
-            border: 1px solid black;
-            padding: 1rem;
             font-family: "Shantell Sans", cursive;
             font-optical-sizing: auto;
-            font-weight: weight;}
-           img{
-            width: 30px;
+            font-weight: bold;
+            font-size: 25px;
            }
+        #celula_invisivel{
+            border-top: transparent;
+            border-left: transparent;        }
+        td,th{
+            border: 2.8px solid black;
+            padding: 14.4px;
+            gap: .625rem;
+        }
+        .refeicoes{
+            display: flex;
+            align-items: center;
+            justify-content:flex-start;
+            border-right: transparent;
+            border-top: transparent;
+        }
+        img{
+            margin-right: .625rem;
+            width: 50px;
+            height: auto;
+            float: left;}
     </style>
 </head>
 <body>
     <table>
         <tr>
-            <td id="celula"></td>
-            <td>Segunda</td>
-            <td>Terça</td>
-            <td >Quarta</td>
-            <td>Quinta</td>
-            <td>Sexta</td>
-            <td>Sábado</td>
-            <td>Domingo</td>
+            <th id="celula_invisivel"></th>
+            <th>Segunda</th>
+            <th>Terça</th>
+            <th >Quarta</th>
+            <th>Quinta</th>
+            <th>Sexta</th>
+            <th>Sábado</th>
+            <th>Domingo</th>
         </tr>
         <tr>
            
-            <td>Café <img src="https://cdn-icons-png.flaticon.com/512/2652/2652631.png" alt=""> </td>
+            <td class="refeicoes"><img src="https://cdn-icons-png.flaticon.com/512/2652/2652631.png" alt="cafe">Café</td>
             <td></td>
             <td></td>
             <td></td>
@@ -49,7 +61,7 @@
             <td></td>
         </tr>
         <tr>
-            <td>Almoço</td>
+            <td class="refeicoes"><img src="https://cdn-icons-png.flaticon.com/512/2217/2217350.png" alt="almoço">Almoço</td>
             <td></td>
             <td></td>
             <td></td>
@@ -59,7 +71,7 @@
             <td></td>
         </tr>
         <tr>
-            <td>Café</td>
+            <td class="refeicoes"><img src="https://cdn-icons-png.flaticon.com/512/2652/2652631.png" alt="cafe">Café </td>
             <td></td>
             <td></td>
             <td></td>
@@ -69,7 +81,7 @@
             <td></td>
         </tr>
         <tr>
-            <td>Jantar</td>
+            <td class="refeicoes"><img src="https://cdn-icons-png.flaticon.com/512/2217/2217350.png" alt="jantar">Jantar </td>
             <td></td>
             <td></td>
             <td></td>
