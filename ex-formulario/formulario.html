@@ -6,6 +6,10 @@
     <title>Atividade Formulário</title>
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=New+Amsterdam&display=swap');
+        :root{
+            --altura-login: 40vw; 
+        }
         *{
             margin: 0;
             padding: 0;
@@ -21,36 +25,39 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            width: 40%;
-            padding: 4.167vw;
+            width: var(--altura-login); 
+            padding: 80px;
         }
-        h2{ margin-bottom: .625rem;
+        h2{ 
+            margin-bottom: .625rem;
             color: black;
-
         }
         p{
             color: rgb(103, 103, 103);
-            margin-bottom: .625rem;
+            margin-bottom: 15px;
         }
         .login form{
             display: flex;
             flex-direction: column;
         }
         .login input{
-            border: .0625rem solid rgb(227, 216, 216) ;
+            border: .0625rem solid rgb(227, 216, 216);
             border-radius: .25rem;
             padding: 1rem;
             margin-bottom: 1.25rem;
             font-size: 1.0625rem;
-            height: 3.125rem;
+            height: 40px;
         }
         .enter{
             background-color: black;
             color: white;
             cursor: pointer;
         }
-        .or{text-align: center;
-            margin: 1.25rem ;
+        .or{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1.25rem 0;
             color: rgb(40, 38, 38);
             font-size: 16px;
             position: relative;
@@ -60,27 +67,68 @@
             flex: 1;
             height: .0625rem;
             width: 100%;
-            background-color:rgb(227, 216, 216);
-            position: absolute;
-            top: 50%;}
-        .or::after{
-            right: 0;
+            background-color: rgb(227, 216, 216);
         }
-        .or::before{
-            left: 0;
+        .or span {
+            padding: 0 10px;
+            background-color: white;
         }
         .continuando{
             display: flex;
             flex-direction: column;
         }
         .google, .apple, .facebook{
-            border: .0625rem solid rgb(227, 216, 216) ;
+            display: flex;
+            border: .0625rem solid rgb(227, 216, 216);
             border-radius: .25rem;
             padding: 1rem;
             margin-bottom: 1.25rem;
+            height: 2.5rem;
             font-size: 1.0625rem;
-            height: 50px;
             background-color: white;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .redes{
+            width: 25px;
+            height: 25px;
+            margin-right: 10px;
+        }
+        .termos a {
+            text-decoration: none;
+            text-decoration: underline;
+            color: black;
+        }
+        .imagem-container {
+            display: flex;
+            width: calc(100vw - var(--altura-login));
+            height: 100vh;
+            background-image: url('https://i.pinimg.com/originals/7e/b0/e0/7eb0e012573e9ba06f2a440eea298169.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .imagem-container p {
+            position: absolute;
+            left: 2.5rem;
+            top: 2.5rem;
+            align-self: flex-start;
+            color: white;
+            font-family: "New Amsterdam", sans-serif;
+            font-weight: 400;
+            font-size: 1.375rem;
+        }
+        .imagem-container .legenda{
+            position: absolute;
+            top: 11.25rem;
+            left: 2.5rem;
+            font-size: .9375rem;
+            color: rgb(205, 206, 206);
         }
     </style>
 </head>
@@ -91,23 +139,25 @@
                 <h2>Faça login ou crie uma conta.</h2>
                 <p>Bem-vindo de volta! Insira seus dados para continuar.</p>
                 <form action="#" method="get">
-                    <input type="email" id="email" placeholder="Seu email ">
+                    <input type="email" id="email" placeholder="Seu email">
                     <input type="password" id="senha" placeholder="Senha">
                     <input class="enter" type="submit" value="Continuar">
+                </form>
             </div>
             <div class="or">
-                <span>or</span>
+                <span>ou</span>
             </div>
             <div class="continuando">
-                <button class="google"> <i></i> Continue com Google</button>
-                <button class="apple">Continue com Apple</button>
-                <button class="facebook">Continue com Facebook</button></div>
-                <p>By signing in or creating an account, you agree with our <a href="#">Terms & Conditions</a> and <a href="#">Privacy Statement</a>.</p>
+                <button class="google"> <img class="redes" src="google.ico" alt="google"> Continue com Google</button>
+                <button class="apple"> <img class="redes" src="logotipo-da-apple.ico" alt="apple"> Continue com Apple</button>
+                <button class="facebook"> <img class="redes" src="facebook.ico" alt="facebook"> Continue com Facebook</button>
             </div>
+            <p class="termos">Para continuar ou criar uma conta , você concorda com os <a href="">Termos & ondições</a> e <a href="">Hakuna Matata</a>.</p>
         </div>
         <div class="imagem-container">
-            <img src="https://i.pinimg.com/originals/11/37/f9/1137f994f229dfce1acc566a621cb16f.jpg" alt="imagem-carnerinho">
-            <p>"Alegrem-se sempre no Senhor.cDirei novamente: Alegrem-se!"</p>
+            <p>"Hakuna matata! É lindo dizer! <br> Hakuna matata! Sim, vai entender! <br> Os seus problemas você deve esquecer! <br>Isso é viver, é aprender! <br>Hakuna matata!"</p> 
+            <p class="legenda"> Timão e Pumba - O Rei Leão (1994) </p>
+          
         </div>
     </div>
 </body>
