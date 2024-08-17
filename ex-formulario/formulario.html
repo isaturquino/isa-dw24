@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Formulário</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        .container{
+            display: flex;
+            height: 100vh;
+            width: 100%;
+        }
+        .login{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 40%;
+            padding: 4.167vw;
+        }
+        h2{ margin-bottom: .625rem;
+            color: black;
+
+        }
+        p{
+            color: rgb(103, 103, 103);
+            margin-bottom: .625rem;
+        }
+        .login form{
+            display: flex;
+            flex-direction: column;
+        }
+        .login input{
+            border: .0625rem solid rgb(227, 216, 216) ;
+            border-radius: .25rem;
+            padding: 1rem;
+            margin-bottom: 1.25rem;
+            font-size: 1.0625rem;
+            height: 3.125rem;
+        }
+        .enter{
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+        .or{text-align: center;
+            margin: 1.25rem ;
+            color: rgb(40, 38, 38);
+            font-size: 16px;
+            position: relative;
+        }
+        .or::before, .or::after{
+            content: ' ';
+            flex: 1;
+            height: .0625rem;
+            width: 100%;
+            background-color:rgb(227, 216, 216);
+            position: absolute;
+            top: 50%;}
+        .or::after{
+            right: 0;
+        }
+        .or::before{
+            left: 0;
+        }
+        .continuando{
+            display: flex;
+            flex-direction: column;
+        }
+        .google, .apple, .facebook{
+            border: .0625rem solid rgb(227, 216, 216) ;
+            border-radius: .25rem;
+            padding: 1rem;
+            margin-bottom: 1.25rem;
+            font-size: 1.0625rem;
+            height: 50px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+            <div>
+                <h2>Faça login ou crie uma conta.</h2>
+                <p>Bem-vindo de volta! Insira seus dados para continuar.</p>
+                <form action="#" method="get">
+                    <input type="email" id="email" placeholder="Seu email ">
+                    <input type="password" id="senha" placeholder="Senha">
+                    <input class="enter" type="submit" value="Continuar">
+            </div>
+            <div class="or">
+                <span>or</span>
+            </div>
+            <div class="continuando">
+                <button class="google"> <i></i> Continue com Google</button>
+                <button class="apple">Continue com Apple</button>
+                <button class="facebook">Continue com Facebook</button></div>
+                <p>By signing in or creating an account, you agree with our <a href="#">Terms & Conditions</a> and <a href="#">Privacy Statement</a>.</p>
+            </div>
+        </div>
+        <div class="imagem-container">
+            <img src="https://i.pinimg.com/originals/11/37/f9/1137f994f229dfce1acc566a621cb16f.jpg" alt="imagem-carnerinho">
+            <p>"Alegrem-se sempre no Senhor.cDirei novamente: Alegrem-se!"</p>
+        </div>
+    </div>
+</body>
+</html>
