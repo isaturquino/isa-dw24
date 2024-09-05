@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade de multas</title>
-    <script src="./multa.js"></script>
+    <script src="./multa.js" defer></script>
 
     <style>
         *{
@@ -16,7 +16,6 @@
         .container{
             margin: .625rem;
             width: 100%;
-            height: 100vh;
             display: flex;
         }
         .entrada{
@@ -53,6 +52,9 @@
             height: 40px;
             width: 10rem;
         }
+        #saida{
+            background-color: red;
+        }
 
 
     </style>
@@ -73,12 +75,14 @@
     
         <div class="informacoes">
             <p>Multa po excesso de velocidade:</p> <br>
-            <p><b>R$ 130,16 </b> - Até 20% acima do limite permitido </p>
-            <p><b>R$ 195,23 </b>- De 20% até 50% acima do limite permitido</p>
-            <p><b>R$ 880,41 </b>- Acima de 50% do limite permitido</p>
+            <p><b>R$ 130,16 </b> - Até 20% acima do limite permitido </p>  <br>
+            <p><b>R$ 195,23 </b>- De 20% até 50% acima do limite permitido</p> <br>
+            <p><b>R$ 880,41 </b>- Acima de 50% do limite permitido</p> <br>
         </div>
+        
     </div>
     <div id="saida"></div>
+
     
 
 </body>
