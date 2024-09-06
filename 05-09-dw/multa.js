@@ -25,10 +25,10 @@ function calculaMulta (){
         mensagem = "Multa de R$ 130,16 - Você excedeu " + porcentagemExcesso.toFixed(2)+ "% do limite da via."; 
     }
     else if (excesso <= (velocidadeMax * 0.50) ){
-        mensagem = "Multa de R$ 195,23 - De 20% até 50% acima do limite permitido";
+        mensagem = "Multa de R$ 195,23 - Você excedeu " + porcentagemExcesso.toFixed(2)+ "% do limite da via.";
     }
     else {
-        mensagem = "Multa de R$ 880,41 - - Acima de 50% do limite permitido";
+        mensagem = "Multa de R$ 880,41 - Você excedeu " + porcentagemExcesso.toFixed(2)+ "% do limite da via.";
     }
 
     divsaida.innerText = mensagem
