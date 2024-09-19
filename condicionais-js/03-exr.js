@@ -1,3 +1,24 @@
-let condicao1 = false
-let condicao2 = true
-let condicao3 = true
+function fluxoCaminhos(escolha){
+    if(escolha == 1){
+        console.log("Caminho A")
+    } else if(escolha == 2){
+        console.log("Caminho B")
+    } else if(escolha == 3){
+        console.log("Caminho C")
+    } else if(escolha == 4){
+        console.log("Caminho D")
+    } else if(escolha == 5){
+        console.log("Caminho E")
+    } else if(escolha == 6){
+        console.log("Caminho F")
+    } else if(escolha == 7){
+        console.log("Caminho G")
+    } else if(escolha == 8){
+        console.log("Caminho H")
+    } else{
+        console.log("Escolha inválida. Tente de novo.")
+    }
+}
+
+let escolhaUsuario = Number(prompt("Digite um número de 1 a 8:"))
+fluxoCaminhos(escolhaUsuario)
