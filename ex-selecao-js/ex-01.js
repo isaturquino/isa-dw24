@@ -10,6 +10,8 @@ function idadeAtleta(idd){
         console.log("Categoria 'juvenil B'")
     } else if (idd>=18){
         console.log("Categoria 'adulto'")
+    } else{
+        console.log("Novo demais!")
     }
 }
-idadeAtleta(21)
+idadeAtleta(4)
