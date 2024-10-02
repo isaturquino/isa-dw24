@@ -14,4 +14,4 @@ function idadeAtleta(idd){
         console.log("Novo demais!")
     }
 }
-idadeAtleta(4)
+idadeAtleta(19)
