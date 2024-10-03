@@ -1,4 +1,4 @@
-function imprimir(N){
+function par(N){
     for (let i = N; i >= 1; i--){
         if(i % 2 == 0){
             console.log(i)
@@ -6,4 +6,4 @@ function imprimir(N){
     
     }
 }
-imprimir(10)
+par(10)
