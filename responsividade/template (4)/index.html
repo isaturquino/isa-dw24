@@ -8,7 +8,6 @@
 </head>
 <body>
     <nav>
-        
         <ul>
             <li class="logotipo"><a href="#">Dev Point</a></li>
             <li class="hideMobile"><a href="#">Início</a></li>
@@ -16,14 +15,13 @@
             <li class="hideMobile"><a href="#">Projetos</a></li>
             <li class="hideMobile"><a href="#">Blog</a></li>
             <li class="hideMobile"><a href="#">Contato</a></li>
-            <li>
+            <li class="menu-icon">
                 <a href="#"><svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
                 </a>
             </li>
-            
         </ul>
         <ul id="sidebar">
-            <li>
+            <li class="close-icon">
                 <a href="#"><svg class="icon" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
                 </a>
             </li>
@@ -32,15 +30,26 @@
             <li><a href="#">Projetos</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Contato</a></li>
-            
         </ul>
-        
     </nav>
 
     <div class="content">
         <h1>Olá programador(a).</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Alias ipsa quae doloremque.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ipsa quae doloremque.</p>
     </div>
+
+  
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+        const closeIcon = document.querySelector('.close-icon');
+        const sidebar = document.getElementById('sidebar');
+
+        menuIcon.addEventListener('click', () => {
+            sidebar.style.display = 'flex';
+        });
+        closeIcon.addEventListener('click', () => {
+            sidebar.style.display = 'none';
+        });
+    </script>
 </body>
 </html>
