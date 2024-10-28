@@ -88,12 +88,12 @@ nav a:hover{
     max-width: 400px;
 }
 
-@media (max-widht: 600px){
+@media (max-width: 600px){
     .hideMobile{
         display: none;
     }
 
 }
-@media (min-widht: 600px){
+@media (min-width: 600px){
 
 }
