@@ -49,13 +49,14 @@ nav a {
     z-index: 1000;
     transition: all 1s;
     padding: 1rem;
+    align-items: center;
 }
 .sidebar-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding-bottom: 1rem;
+    padding-bottom: 30px;
     border-bottom: 1px solid #eaf4f4;
 }
 .logotipo {
