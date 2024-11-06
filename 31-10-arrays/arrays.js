@@ -20,4 +20,4 @@ function inserir(vetor, pos, valor){
     vetor[pos] = valor
 }
 
-console.log(vetor)
+console.log(10)
