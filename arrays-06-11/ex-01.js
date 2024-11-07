@@ -6,10 +6,10 @@ function sumArray(array) {
     }
     return sum;
   }
-    for (elemento of array){
-      sum+= elemento
-    }
-    return sum // essa estrutura é utilizada quando o índice não importa 
+    // for (elemento of array){
+    //   sum+= elemento
+    // }
+    // return sum // essa estrutura é utilizada quando o índice não importa 
   
   console.log(sumArray([1, 2, 3, 4])); 
   console.log(sumArray([10, -10, 10])); 
