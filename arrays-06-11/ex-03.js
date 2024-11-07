@@ -1,8 +1,7 @@
 function contaOcorr(arr, element) {
     let count = 0;
-  
-    for (let i = 0; i < arr.length; i++) {
-      if (arr[i] === element) {
+    for (elemento of arr) {
+      if (elemento === element) {
         count++; 
       }
     }
