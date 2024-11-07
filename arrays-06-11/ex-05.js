@@ -1,9 +1,9 @@
-function removeDuplicates(arr) {
+function removeDuplicates(vetor) {
     let unicoArray = [];
   
-    for (let i = 0; i < arr.length; i++) {
-      if (!unicoArray.includes(arr[i])) {
-        unicoArray.push(arr[i]); 
+    for (elemento of vetor) {
+      if (!unicoArray.includes(elemento)) {
+        unicoArray.push(elemento); 
       }
     }
   
