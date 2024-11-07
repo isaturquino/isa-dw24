@@ -1,15 +1,13 @@
 function removeDuplicates(arr) {
-    let unicoArray = []; // Array para armazenar os elementos únicos
+    let unicoArray = [];
   
-    // Percorre o array original
     for (let i = 0; i < arr.length; i++) {
-      // Verifica se o elemento ainda não está no array 'uniqueArray'
       if (!unicoArray.includes(arr[i])) {
-        unicoArray.push(arr[i]); // Adiciona o elemento ao array 'uniqueArray' se não for duplicado
+        unicoArray.push(arr[i]); 
       }
     }
   
-    return unicoArray; // Retorna o array com os elementos únicos
+    return unicoArray; 
   }
   
   console.log(removeDuplicates([1, 2, 2, 3, 3, 3, 4])); // Deve exibir: [1, 2, 3, 4]
