@@ -10,7 +10,7 @@ function ehTriangulo(lado1, lado2, lado3){
 // PROGRAMA PRINCIPAL
 
 let l1 = 10
-let l2 = 2
+let l2 = 15
 let l3 = 15
 
 if (ehTriangulo(l1,l2,l3)){
