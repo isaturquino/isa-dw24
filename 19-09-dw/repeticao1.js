@@ -1,5 +1,5 @@
 let condicao1 = true
-let condicao2 = true
+let condicao2 = false
 
 console.log("1")
 console.log("2")
