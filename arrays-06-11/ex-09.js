@@ -1,4 +1,4 @@
-// exercício 8 
+// exercício 09 
 function reverseArray(arr) {
     let reversedArray = [];
     for (let element of arr) {
