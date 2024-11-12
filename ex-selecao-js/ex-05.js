@@ -1,8 +1,8 @@
 let medida = 13
-let unidade = "m"
+let unidade = "km"
 // você coloca aqui a medida e a unidade que quer converter 
 function converter(medida, unidade) {
-    let resultado;
+    let resultado = 0
 
     if (unidade === "m") { 
         resultado = medida * 100 + " cm"
