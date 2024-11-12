@@ -1,7 +1,7 @@
 // exercício 09 
 function reverseArray(arr) {
     let reversedArray = [];
-    for (let element of arr) {
+    for ( element of arr) {
         reversedArray.unshift(element);
     }
 
