@@ -1,4 +1,4 @@
-//Exercício 05
+//Exercício 05 Iteração sobre Propriedades
 const produto = {
     nome : "Coca-cola",
     preco: 2.50,
