@@ -1,4 +1,4 @@
-// Crie um objeto chamado pessoa 04
+// exercício 04 Objeto com Função (Método)
 
 const pessoa = {
     nome: "Isabely",
