@@ -1,7 +1,7 @@
 // exercício 07 Cálculo com Métodos de Objeto
 const carrinho = {
     itens: [
-        { nome: "Melância", preco: 18.50 },
+        { nome: "Melancia", preco: 18.50 },
         { nome: "Abacaxi", preco: 6.90 },
         { nome: "Melão", preco: 12.90 }
     ],
