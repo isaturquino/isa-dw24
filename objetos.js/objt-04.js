@@ -1,4 +1,4 @@
-// Crie um objeto chamado pessoa
+// Crie um objeto chamado pessoa 04
 
 const pessoa = {
     nome: "Isabely",
