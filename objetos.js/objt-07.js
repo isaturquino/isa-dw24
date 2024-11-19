@@ -1,3 +1,4 @@
+// exercício 07 Cálculo com Métodos de Objeto
 const carrinho = {
     itens: [
         { nome: "Melância", preco: 18.50 },
