@@ -1,4 +1,4 @@
-// exercício 06
+// exercício 06 Array de Objetos
 const biblioteca = [
     { titulo: "Harry Potter e o Cálice de Fogo", autor: "J.K Rolling", anoPublicacao: 2000 },
     { titulo: "Jogos Vorazes", autor: "Suzanne Collins", anoPublicacao: 2008 },
