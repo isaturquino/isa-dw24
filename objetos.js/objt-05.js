@@ -1,3 +1,4 @@
+//Exercício 05
 const produto = {
     nome : "Coca-cola",
     preco: 2.50,
