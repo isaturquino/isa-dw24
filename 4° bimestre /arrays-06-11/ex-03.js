@@ -1,0 +1,17 @@
+function contaOcorr(arr, element) {
+    let count = 0;
+    for (elemento of arr) {
+      if (elemento === element) {
+        count++; 
+      }
+    }
+    return count; 
+  }
+  
+  console.log(contaOcorr([1, 2, 2, 3, 2, 1], 2)); // Deve exibir: 3
+  console.log(contaOcorr(["apple", "banana", "apple"], "apple")); // Deve exibir: 2
+  console.log(contaOcorr(["fruta", "legume", "verdura", "berinjela"], "berinjela")); // Deve exibir: 2
+  console.log(contaOcorr(["bolacha", "bolacha", "bolacha"], "biscoito")); // Deve exibir: 2
+  
+  
+  
