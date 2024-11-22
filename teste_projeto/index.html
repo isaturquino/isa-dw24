@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tese - Introdução</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Corinthia:wght@400;700&family=Fira+Sans&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=New+Amsterdam&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #000000;
+            background-image: url('imagens/white.png');
+            background-size: cover;
+            font-family: "Corinthia", cursive;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 1.5rem;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        input {
+            padding: 10px;
+            margin: 20px 0;
+            font-size: 1rem;
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #000000;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button i {
+            font-size: 24px;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .theme-toggle {
+            display: flex;
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            justify-content: flex-start;
+            align-items: flex-start;
+            cursor: pointer;
+        }
+
+        body.dark-mode {
+            background-image: url('imagens/dark.png');
+            color: #ffffff;
+        }
+
+        body.dark-mode button {
+            color: #000000;
+        }
+
+        body.dark-mode button i {
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Introdução - Tese</h1>
+        <p>Esta é a página de introdução da tese. Pressione as teclas para navegar.</p>
+        <div class="theme-toggle" id="toggle-theme">
+            <i class="fas fa-moon"></i> 
+        </div>
+    </div>
+
+    <script>
+        // Função de tema claro e escuro
+        const botaoTema = document.getElementById("toggle-theme");
+
+        botaoTema.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+            const temaEscuro = document.body.classList.contains("dark-mode");
+            localStorage.setItem("tema", temaEscuro ? "escuro" : "claro");
+
+            const icone = document.querySelector("#toggle-theme i");
+            if (temaEscuro) {
+                icone.classList.remove("fa-moon");
+                icone.classList.add("fa-sun");
+            } else {
+                icone.classList.remove("fa-sun");
+                icone.classList.add("fa-moon");
+            }
+        });
+
+        window.addEventListener("load", () => {
+            const temaSalvo = localStorage.getItem("tema");
+            if (temaSalvo === "escuro") {
+                document.body.classList.add("dark-mode");
+
+                const icone = document.querySelector("#toggle-theme i");
+                icone.classList.remove("fa-moon");
+                icone.classList.add("fa-sun");
+            }
+        });
+
+      // Função para navegação por teclas
+      document.addEventListener("keydown", (event) => {
+            const tecla = event.key;
+
+            if (event.ctrlKey && tecla === "x" ) {
+                // Detecta Ctrl + H para alternar para a página Metodologia
+                window.location.href = "metodologia.html"; // Alterna para a página Metodologia
+            }
+
+            if (event.ctrlKey && tecla === "x") {
+                // Detecta Ctrl + Shift + H para voltar para a página anterior
+                history.back(); // Volta para a página anterior
+            }
+        });
+     
+    </script>
+</body>
+</html>
