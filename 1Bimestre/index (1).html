@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        span{
+            background-color: yellow;
+        }
+        #s1{
+            background-color: red;
+        }
+        .destaque{
+            background-color: green;
+        }
+        div, span, section{
+            border: 1px solid gray;
+        }
+
+        section span{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <span id="s1" class="destaque">Span 0</span>
+
+    <section>
+    
+        <span>Span 1</span>
+    
+        <div>
+            <span>Span 2</span>
+            <span>Span 3</span>
+        </div>
+    
+        <span>Span 4</span>
+    
+    </section>
+    
+<!-- section quebra linha;
+Hierarquia o body tem 2 filhos o span e o section, o sectino tem 3 filhos 1 div e dois span, a div tem dois filhos as duas span  -->
+</body>
+</html>
