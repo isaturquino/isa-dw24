@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+:root{
+    --cabecalho: 12vh;
+    --rodape:12vh;
+    --sidebar:15vw}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+flex-wrap: wrap;
+height: 100vh;
+width: 100vw;}
+p{
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 2.5rem;
+} .cabeçalho{
+    background-color: #ffef9f;
+    border-color: black;
+    border-width: thin;
+    border-style: solid;
+    height: var(--cabecalho);
+    width: 85%;
+    display: flex;
+    align-self: flex-start;}
+
+.sidebar{
+    background-color: #a9def9;
+    border-color: black;
+    border-width: thin;
+    border-style: solid;
+    height: 100vh;
+    width: var(--sidebar);
+    float: left;
+}
+.conteudo{
+    background-color: #baf2bb;
+    border-color: black;
+    border-width: thin;
+    border-style: solid;
+    height:calc(100vh - var(--cabecalho) - var(--rodape)) ;
+    width: 100vw;
+}
+.rodape{
+    background-color: #efcfe3;
+    border-color: black;
+    border-width: thin;
+    border-style: solid;
+    height: var(--rodape);
+    width: 85%;
+    display: flex;
+    align-self: flex-end;
+
+}
+

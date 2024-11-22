@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --altura-menu: 60px;
+    --azul-tituloSubtitulo: #04395e;
+    --menu-footer:#022b3a;
+    --fonte-principal:"Merriweather",serif;
+    --fonte-textos:"Times New Roman", Times, serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 100vw;
+    height: 100%;
+}
+
+.menu {
+    height: var(--altura-menu);
+    background-color: var(--menu-footer);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    padding: 1.25rem .9375rem;
+    display: inline-block;
+    height: 3.75rem;
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.menu a:hover {
+    background-color: var(--azul-tituloSubtitulo);
+}
+
+div#home {
+    background-size: cover;
+    width: 100vw;
+    height: calc(120vh - var(--altura-menu));
+    background-position: center;
+    background-image: url("https://static.wixstatic.com/media/c549fe_4852ce165f2c4500a25168a4d3ccb06f~mv2.jpg/v1/fill/w_1920,h_1080,al_c/c549fe_4852ce165f2c4500a25168a4d3ccb06f~mv2.jpg");
+}
+
+div#tema {
+    background-color: #f0efeb;
+    width: 100%;
+    height: 100vh;
+}
+
+div#secao2 {
+    background-color: #e9ecef;
+    width: 100%;
+    height: 100vh
+}
+div#secao3 {
+    background-color: #dee2e6;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.home {
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.titulos {
+    color: rgb(255, 255, 255);
+    font-family:var(--fonte-principal) ;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.titulo2 {
+    color:var(--azul-tituloSubtitulo);
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.textos {
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    font-family: var(--fonte-textos);
+    margin: .5rem;
+    background-color: #00000052;
+
+}
+
+.subtitulos {
+    color: white;
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.3rem;
+    display: inline-block;
+    margin: .5rem;
+
+}
+
+.subtitulos2 {
+    color:var(--azul-tituloSubtitulo);
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: .5rem;
+}
+
+.subtitulos3 {
+    color: var(--azul-tituloSubtitulo);
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.25rem;
+    text-align: left;
+    margin: .5rem;
+}
+
+.textos2 {
+    color: blaCK;
+    font-size: 1.1rem;
+    font-family: var(--fonte-textos);
+    margin: .5rem;
+}
+
+.imagem2 {
+    background-size: cover;
+    width: 23rem;
+    height: 23rem;
+    background-repeat: no-repeat;
+    justify-content: left;
+    margin: 8px;
+    background-image: url(https://static.qobuz.com/images/covers/yb/tx/wf9ek102atxyb_600.jpg);
+    float: left;
+}
+
+footer{
+    background-color: var(--menu-footer);
+    width: 100%;
+    height: 11.25rem;
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+div#igreja{
+    width: 33%;
+    height: 33%;
+    flex-direction: column;
+}
+div#redes_sociais{
+    width: 33%;
+    height: 33%;
+    flex-direction: column;
+}
+.redes{
+    width: 3rem;
+    height: 3rem;
+    margin: 0.65rem;
+    
+}
+div#contatos{
+    width: 33%;
+    height: 33%;
+    flex-direction: column;
+}
+.textoRodape{
+    color: white;
+    font-size: 1.1rem;
+    font-family: var(--fonte-textos);
+    margin: .5rem;
+}
+
+#botao-topo{
+    text-decoration: none;
+    color: white;
+    background-color: var(--azul-tituloSubtitulo);
+    position: fixed;
+    width: 3.125rem;
+    height: 3.125rem;
+    right: .625rem;
+    bottom: .625rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: .25rem .25rem .9375rem #333;
+}
+.logoI{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5.625rem;
+    height: 5.625rem;
+    margin: .5rem;
+    
+}
